@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI vs Kampus - Siapa yang Menang?</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">AIvsKampus.id / 2026</div>
+    <div class="nav-status">
+      <div class="nav-dot"></div>
+      Debat masih berlangsung
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-text">KRISIS</div>
+
+    <div class="hero-content">
+      <div class="hero-left reveal">
+        <div class="hero-tag">Pertanyaan yang tidak bisa dihindari</div>
+        <h1 class="hero-headline">
+          Kampus<br>
+          <span class="accent">Masih</span><br>
+          Relevan?
+        </h1>
+      </div>
+      <div class="hero-right reveal reveal-delay-2">
+        <p class="hero-subhead">
+          Ketika AI bisa mengajar kalkulus dalam 20 menit dan menulis skripsi semalam, kita perlu bertanya:<br><br>
+          <em>Apakah gelar sarjana masih sepadan dengan 4 tahun dan ratusan juta rupiah?</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-bottom reveal reveal-delay-3">
+      <div class="hero-stat">
+        <div class="stat-num">63%</div>
+        <div class="stat-label">Mahasiswa sudah pakai AI<br>untuk tugas akademik</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">4×</div>
+        <div class="stat-label">Lebih cepat belajar skill<br>dengan AI vs kuliah konvensional</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">↓38%</div>
+        <div class="stat-label">Penurunan minat masuk<br>perguruan tinggi (2020–2024)</div>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        Scroll untuk eksplorasi
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-inner">
+      <span>CHATGPT BISA LULUS UKMPPD</span><span class="sep">✦</span>
+      <span>HARVARD PAKAI AI UNTUK GRADING</span><span class="sep">✦</span>
+      <span>GELAR S1 MAKIN DIPERTANYAKAN</span><span class="sep">✦</span>
+      <span>AI TIDAK BISA MENGGANTIKAN MENTOR</span><span class="sep">✦</span>
+      <span>KAMPUS BUTUH EVOLUSI BUKAN EULOGI</span><span class="sep">✦</span>
+      <span>CHATGPT BISA LULUS UKMPPD</span><span class="sep">✦</span>
+      <span>HARVARD PAKAI AI UNTUK GRADING</span><span class="sep">✦</span>
+      <span>GELAR S1 MAKIN DIPERTANYAKAN</span><span class="sep">✦</span>
+      <span>AI TIDAK BISA MENGGANTIKAN MENTOR</span><span class="sep">✦</span>
+      <span>KAMPUS BUTUH EVOLUSI BUKAN EULOGI</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- DEBATE TOGGLE SECTION -->
+  <section id="debate">
+    <div class="debate-header reveal">
+      <div class="debate-title">
+        Dua<br><span class="hi">Sisi</span><br>Argumen
+      </div>
+      <div class="toggle-wrapper" id="toggleWrapper" role="group" aria-label="Pilih perspektif">
+        <span class="toggle-label inactive" id="labelEdu">PRO KAMPUS</span>
+        <div class="toggle-track" id="toggleTrack" onclick="switchSide()" role="switch" aria-checked="false"
+          tabindex="0">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="toggle-label active" id="labelAI">PRO AI</span>
+      </div>
+    </div>
+
+    <div class="debate-cards">
+      <div class="debate-col" id="colEdu">
+        <div class="col-head">
+          <span class="emoji-accent">🏛️</span>
+          Membela Kampus
+        </div>
+        <div class="arg-card edu-side reveal reveal-delay-1">
+          <div class="arg-num">/ 01</div>
+          <p class="arg-text">Kampus adalah ruang sosialisasi yang tidak bisa direplika-network, debat langsung,
+            kolaborasi lintas jurusan membentuk kecerdasan sosial yang tidak muncul dari chatting dengan AI.</p>
+          <span class="arg-tag edu">Human Connection</span>
+        </div>
+        <div class="arg-card edu-side reveal reveal-delay-2">
+          <div class="arg-num">/ 02</div>
+          <p class="arg-text">Kurikulum terstruktur memaksa mahasiswa keluar dari zona nyaman-belajar hal yang tidak
+            mereka pilih sendiri, yang justru sering menjadi landasan inovasi terbesar.</p>
+          <span class="arg-tag edu">Structured Growth</span>
+        </div>
+        <div class="arg-card edu-side reveal reveal-delay-3">
+          <div class="arg-num">/ 03</div>
+          <p class="arg-text">Akreditasi dan gelar masih menjadi sinyal kepercayaan di dunia profesional. Tanpa filter
+            ini, pasar kerja akan kebanjiran klaim kompetensi yang tidak terverifikasi.</p>
+          <span class="arg-tag edu">Signal & Trust</span>
+        </div>
+      </div>
+
+      <div class="debate-col" id="colAI">
+        <div class="col-head">
+          <span class="emoji-accent">🤖</span>
+          Membela AI
+        </div>
+        <div class="arg-card ai-side reveal reveal-delay-1">
+          <div class="arg-num">/ 01</div>
+          <p class="arg-text">AI mengajar secara adaptif-menyesuaikan kecepatan, gaya, dan kedalaman materi per
+            individu. Satu dosen untuk 200 mahasiswa tidak pernah bisa bersaing dengan ini.</p>
+          <span class="arg-tag ai">Personalized Learning</span>
+        </div>
+        <div class="arg-card ai-side reveal reveal-delay-2">
+          <div class="arg-num">/ 02</div>
+          <p class="arg-text">Biaya pendidikan tinggi meledak sementara ROI-nya stagnan. AI menawarkan akses ke
+            pengetahuan kelas dunia tanpa utang pendidikan puluhan tahun ke depan.</p>
+          <span class="arg-tag ai">Cost Disruption</span>
+        </div>
+        <div class="arg-card ai-side reveal reveal-delay-3">
+          <div class="arg-num">/ 03</div>
+          <p class="arg-text">Skill yang dipelajari di kampus usang lebih cepat dari masa studi. AI memperbarui dirinya
+            secara real-time-mahasiswa yang lulus 4 tahun lagi mempelajari kurikulum hari ini.</p>
+          <span class="arg-tag ai">Always Current</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARE SECTION -->
+  <section id="compare" style="padding: 0;">
+    <div style="padding: 4rem 3rem 2rem; background: var(--mist);">
+      <div class="section-label reveal">02 - Head to Head</div>
+      <h2 class="section-title reveal reveal-delay-1">Siapa Unggul<br>di Mana?</h2>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-col ai-col reveal">
+        <div class="compare-col-label">
+          <span style="filter: saturate(0.6) brightness(1.3); display:inline-block; transform:rotate(-8deg);">🤖</span>
+          Kecerdasan Buatan
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">⚡</div>
+          <div class="compare-item-text">
+            <strong>Kecepatan Belajar</strong>
+            Materi yang butuh 1 semester bisa dipelajari dalam seminggu dengan AI tutor adaptif.
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">💰</div>
+          <div class="compare-item-text">
+            <strong>Aksesibilitas Biaya</strong>
+            Dari nol hingga mahir tanpa biaya pendaftaran, UKT, atau kos.
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">🌐</div>
+          <div class="compare-item-text">
+            <strong>Update Konten</strong>
+            Pengetahuan terbaru tersedia langsung-tidak ada jeda antara penemuan dan pengajaran.
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">📊</div>
+          <div class="compare-item-text">
+            <strong>Tracking Progress</strong>
+            Data granular tentang titik lemah dan kekuatan pelajar secara real-time.
+          </div>
+        </div>
+      </div>
+      <div class="compare-divider"></div>
+      <div class="compare-col edu-col reveal reveal-delay-2">
+        <div class="compare-col-label">
+          <span style="filter: sepia(0.5) saturate(1.2); display:inline-block; transform:rotate(6deg);">🏛️</span>
+          Perguruan Tinggi
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">🤝</div>
+          <div class="compare-item-text">
+            <strong>Jaringan & Komunitas</strong>
+            Teman seangkatan, alumni, dosen-koneksi yang bisa membuka pintu karier.
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">🔬</div>
+          <div class="compare-item-text">
+            <strong>Riset Mendalam</strong>
+            Akses ke lab, jurnal, dan bimbingan akademisi yang berpengalaman di bidangnya.
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">🪪</div>
+          <div class="compare-item-text">
+            <strong>Legitimasi Sosial</strong>
+            Gelar masih menjadi syarat formal di banyak profesi dan lembaga pemerintahan.
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-item-icon">🧠</div>
+          <div class="compare-item-text">
+            <strong>Critical Thinking</strong>
+            Seminar, debat, dan peer review melatih kemampuan berpikir yang tidak muncul dari prompt.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THESIS SECTION -->
+  <section id="thesis">
+    <div class="thesis-bg"></div>
+    <div class="thesis-layout">
+      <div class="thesis-aside reveal">
+        <div class="verdict-pill">Tesis Utama</div>
+        <div class="thesis-num">III</div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <blockquote class="thesis-quote">
+          "Masalahnya bukan AI <span class="mark">melawan</span> kampus. Masalahnya adalah kampus yang menolak bertanya:
+          <span class="mark">apa yang hanya bisa kita berikan?</span>"
+        </blockquote>
+        <p class="thesis-body">
+          Perguruan tinggi yang bertahan adalah yang berhenti berkompetisi di ranah transmisi informasi-dan mulai fokus
+          pada yang tidak bisa didigitalisasi: pembentukan karakter, mentor yang hadir secara manusiawi, komunitas yang
+          memberi rasa memiliki, dan pengalaman hidup bersama yang membentuk perspektif.
+          <br><br>
+          AI bukan ancaman bagi pendidikan yang baik. AI adalah cermin yang memperlihatkan betapa banyak pendidikan yang
+          kita lakukan selama ini sebenarnya tidak lebih dari transfer informasi mahal.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA SECTION -->
+  <section id="data">
+    <div class="section-label reveal">04 - Data & Fakta</div>
+    <h2 class="section-title reveal reveal-delay-1">Angka<br>Bicara</h2>
+
+    <div class="data-grid">
+      <div class="data-card reveal">
+        <div class="data-card-num">89%</div>
+        <div class="data-card-label">Perusahaan Fortune 500 kini mempertimbangkan sertifikasi AI setara gelar formal
+          untuk posisi teknis</div>
+        <div class="data-card-source">McKinsey Future of Work 2024</div>
+        <div class="data-card-corner">📈</div>
+      </div>
+      <div class="data-card reveal reveal-delay-1">
+        <div class="data-card-num">2.6×</div>
+        <div class="data-card-label">Mahasiswa yang belajar dengan AI tutor mendapatkan nilai lebih tinggi dibanding
+          kelas konvensional</div>
+        <div class="data-card-source">Carnegie Mellon Study 2023</div>
+        <div class="data-card-corner">🎓</div>
+      </div>
+      <div class="data-card reveal reveal-delay-2">
+        <div class="data-card-num">$1.7T</div>
+        <div class="data-card-label">Total utang mahasiswa di AS-krisis yang mendorong pencarian alternatif pendidikan
+          secara masif</div>
+        <div class="data-card-source">Federal Reserve 2024</div>
+        <div class="data-card-corner">💸</div>
+      </div>
+      <div class="data-card reveal reveal-delay-3">
+        <div class="data-card-num">78%</div>
+        <div class="data-card-label">Dosen di Asia Tenggara belum terlatih mengintegrasikan AI dalam metode pengajaran
+          mereka</div>
+        <div class="data-card-source">UNESCO SEA Report 2024</div>
+        <div class="data-card-corner">🗺️</div>
+      </div>
+      <div class="data-card reveal">
+        <div class="data-card-num">14 jt</div>
+        <div class="data-card-label">Pengguna aktif platform belajar AI seperti Khan Academy AI di seluruh dunia per
+          2024</div>
+        <div class="data-card-source">Khanmigo Analytics 2024</div>
+        <div class="data-card-corner">🌍</div>
+      </div>
+      <div class="data-card reveal reveal-delay-1">
+        <div class="data-card-num">4 thn</div>
+        <div class="data-card-label">Waktu rata-rata yang dibutuhkan kampus untuk memperbarui kurikulum-sementara AI
+          berkembang tiap bulan</div>
+        <div class="data-card-source">World Economic Forum 2023</div>
+        <div class="data-card-corner">⏳</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-content reveal">
+      <div>
+        <h2 class="cta-headline">
+          Pilih<br>Sikapmu
+          <span class="sub">sebelum dunia memilihkan untukmu</span>
+        </h2>
+      </div>
+      <div class="cta-actions reveal reveal-delay-2">
+        <a href="#debate" class="btn-primary">Eksplorasi Argumen</a>
+        <a href="#compare" class="btn-outline">Lihat Perbandingan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-text">© 2026 - Dibuat untuk memancing pikiran, bukan kesimpulan</div>
+    <div class="footer-mark">AI vs Pendidikan Tinggi</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
